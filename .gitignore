@@ -1,0 +1,38 @@
+# .NET
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+DineMaster.Api/appsettings.*.local.json
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/*.local
+bun.lock
+bun.lockb
+
+# Maxfiy sozlamalar — hech qachon commit qilmang
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Loglar
+*.log
+.codex/
+
+# Test natijalari
+**/TestResults/
+*.trx
+coverage/
+
+# Lokal ish papkalari (repozitoriyga kirmaydi)
+upwork-portfolio/
+.claude/

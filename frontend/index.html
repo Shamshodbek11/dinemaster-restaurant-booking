@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <title>%BRAND% — Premium Restoran Bron Qilish</title>
+    <meta name="description" content="%BRAND% — premium restoran bron qilish platformasi. Eng yaxshi restoranlarni kashf eting va bir zumda bron qiling." />
+    <meta name="author" content="%BRAND%" />
+    <meta property="og:title" content="%BRAND% — Premium Restoran Bron Qilish" />
+    <meta property="og:description" content="Eng yaxshi restoranlarni kashf eting va bir zumda bron qiling." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Sahifa yuklanguncha to'g'ri tema (oq/qora "chaqnash" bo'lmasin)
+      try {
+        var m = localStorage.getItem('dm-theme');
+        if (!m) { var l = localStorage.getItem('dm-dark'); if (l !== null) m = l === 'true' ? 'dark' : 'light'; }
+        var dark = m === 'dark' || ((!m || m === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
